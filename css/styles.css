@@ -62,6 +62,7 @@ address {
 /* ============ HERO STYLES ============ */
 .hero {
   background-color: #2e2f42;
+  color: #2e2f42;
 }
 .main-header-lorem {
   color: #2e2f42;
@@ -139,12 +140,16 @@ address {
   text-align: center;
   color: #434455;
 }
-.portfolio-list {
+.portfolio {
   background-color: #ffffff;
 }
 .main-header-portfolio {
-  background-color: #2e2f42;
+  font-size: 36px;
+  color: #2e2f42;
   line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 .portfolio-title {
   font-weight: 500;
