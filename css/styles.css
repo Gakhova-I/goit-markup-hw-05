@@ -123,6 +123,9 @@ address {
 .team-list {
   background-color: #ffffff;
 }
+.team-item {
+  background-color: #ffffff;
+}
 .main-header-team {
   line-height: 1.11;
   font-weight: 700;
@@ -155,6 +158,9 @@ address {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+}
+.portfolio-list {
+  background-color: #ffffff;
 }
 .portfolio-item {
   background-color: #ffffff;
