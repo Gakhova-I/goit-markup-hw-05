@@ -1,7 +1,7 @@
 body {
-  font-family: "Roboto", "Raleway";
-  color: #2e2f42;
-  background-color: E5E5E5;
+  font-family: "Roboto", sans-serif;
+  color: #434455
+  background-color: #FFFFFF;
 }
 
 ul,
@@ -28,7 +28,6 @@ button {
   line-height: 1.16667;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e2f42;
 }
 .accent {
   color: #4d5ae5;
@@ -38,6 +37,7 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
 }
 .menu-item .menu-link:hover {
   color: #404bbf;
@@ -66,22 +66,12 @@ button {
   background: #2e2f42;
 }
 .main-button {
-  border-radius: 4px;
-  padding: 16px 32px;
-  width: 169px;
-  height: 56px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 10px;
 }
 .main-button:hover {
   background: #404bbf;
