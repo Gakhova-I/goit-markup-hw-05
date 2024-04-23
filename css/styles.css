@@ -21,7 +21,7 @@ ol {
 }
 
 .container {
-  width: 1156px;
+  width: 1158px;
   padding-left: 14px;
   padding-right: 14px;
   margin-left: 142px;
@@ -53,6 +53,10 @@ a {
 }
 button {
   cursor: pointer;
+}
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 /* ============ HEADER STYLES ============ */
@@ -109,7 +113,6 @@ h2 {
   align-items: center;
   background-color: #2e2f42;
   color: #2e2f42;
-  margin-bottom: 120px;
 }
 .main-header-lorem {
   color: #2e2f42;
@@ -142,7 +145,6 @@ h2 {
   background-color: #404bbf;
 }
 .benefits {
-  margin-bottom: 120px;
   display: flex;
   flex-direction: column;
 }
@@ -179,7 +181,6 @@ h2 {
   color: #434455;
 }
 .team {
-  margin-bottom: 120px;
   background-color: #f4f4fd;
 }
 .team-list {
@@ -225,9 +226,7 @@ h2 {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
-.portfolio {
-  margin-bottom: 120px;
-}
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
