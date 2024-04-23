@@ -30,12 +30,10 @@ ol {
 }
 /* ============ HEADER STYLES ============ */
 
-.page-header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
 .top-header {
   border-bottom: 1px solid #e7e9fc;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .box-header {
   display: flex;
@@ -124,8 +122,8 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #2e2f42;
   color: #2e2f42;
+  background-color: #2e2f42;
 }
 .main-header-lorem {
   color: #2e2f42;
@@ -172,6 +170,7 @@ h2 {
 }
 .main-header-benefits {
   color: #2e2f42;
+  visibility: hidden;
 }
 .main-header {
   color: #2e2f42;
@@ -200,6 +199,7 @@ h2 {
 }
 .team {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 .team-list {
   display: flex;
