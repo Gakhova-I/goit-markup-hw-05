@@ -118,6 +118,7 @@ h2 {
 }
 /* ============ HERO STYLES ============ */
 .page-hero {
+  padding: 188px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -125,9 +126,7 @@ h2 {
   color: #2e2f42;
   background-color: #2e2f42;
 }
-.main-header-lorem {
-  color: #2e2f42;
-}
+
 .main-title {
   font-weight: 700px;
   font-size: 56px;
@@ -139,6 +138,7 @@ h2 {
   max-width: 496px;
 }
 .main-button {
+  height: 56px;
   display: block;
   font-family: "Roboto", sans-serif;
   background-color: #4d5ae5;
@@ -165,25 +165,32 @@ h2 {
   flex-direction: column;
 }
 .skills-list {
+  gap: 24px;
   display: flex;
   justify-content: space-between;
+
 }
-.main-header-benefits {
-  color: #2e2f42;
-  visibility: hidden;
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
 }
+
 .main-header {
+  margin-bottom: 8px; 
   color: #2e2f42;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
+  text-transform: capitalize;
 }
-.skills-list {
-  background-color: #ffffff;
+.skills-list-item {
+  flex-basis: calc((100% - 3 * 24px);
+  
 }
 .skills-list-title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -197,19 +204,26 @@ h2 {
   letter-spacing: 0.02em;
   color: #434455;
 }
+/*--------------TEAM----------------*/
 .team {
   background-color: #f4f4fd;
   padding: 120px 0;
 }
+.main-header-team{
+  margin-bottom:72px;
+}
+
 .team-list {
   display: flex;
-  justify-content: space-between;
   gap: 24px;
   background-color: #ffffff;
 }
 .team-item {
+  border-radius: 0px 0px 4px 4px; 
   background-color: #ffffff;
 }
+.box-position{
+  padding: 32px 0;}
 .main-header-team {
   text-align: center;
   line-height: 1.11;
@@ -221,19 +235,20 @@ h2 {
   text-transform: capitalize;
 }
 .team-name {
+  text-align: center;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .team-position {
+  text-align: center; 
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #434455;
 }
 .main-header-portfolio {
