@@ -275,6 +275,10 @@ h2 {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
+.box-portfolio-text {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+}
 
 .portfolio-list {
   display: flex;
@@ -288,6 +292,7 @@ h2 {
   background-color: #ffffff;
 }
 .portfolio-title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
