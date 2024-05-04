@@ -431,7 +431,6 @@ address {
 }
 .box-footer {
   display: flex;
-
   align-items: baseline;
   margin-right: 120px;
 }
@@ -452,4 +451,16 @@ address {
 }
 .list-footer {
   gap: 16px;
+}
+.email-footer {
+  display: flex;
+  align-items: baseline;
+  background-color: inherit;
+}
+
+.label-footer {
+  color: #fff;
+}
+.footer-btn-icon {
+  color: #2e2f42;
 }
