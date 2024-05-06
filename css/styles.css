@@ -628,36 +628,58 @@ address {
 .list-footer {
   gap: 16px;
 }
+.form-footer-box {
+  margin-left: 80px;
+}
+.form-footer {
+  display: flex;
+  gap: 24px;
+}
+.text-footer-subscribe {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
 
 .email-footer {
   display: flex;
-  align-items: baseline;
-  background-color: inherit;
   border: 1px solid #fff;
   border-radius: 4px;
   width: 264px;
   height: 40px;
-}
-.form-footer {
-  margin-left: 80px;
-}
-.label-footer {
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
   color: #fff;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.footer-btn-icon {
-}
-.email-footer {
-  margin-top: 16px;
+.email-footer::placeholder {
+  color: #ffffff;
 }
 .footer-btn-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
-  padding: 8px 24px;
+  border: none;
   width: 165px;
   height: 40px;
   color: #fff;
   fill: #fff;
-  background: #4d5ae5;
+  background-color: #4d5ae5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   text-align: center;
-
-  margin-left: 24px;
+  cursor: pointer;
+}
+.footer-btn-icon {
+  margin-left: 16px;
 }
