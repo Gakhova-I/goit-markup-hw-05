@@ -619,7 +619,9 @@ address {
 }
 .review-form-box {
   position: relative;
-
+  margin-bottom: 8px;
+}
+.review-form-box-comment {
   margin-bottom: 16px;
 }
 .review-form-icon {
