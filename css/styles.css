@@ -515,11 +515,10 @@ address {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(46, 47, 66, 0.4);
   width: 100%;
   height: 100%;
   z-index: 999;
-
   justify-content: center;
   align-items: center;
   opacity: 0;
@@ -549,10 +548,14 @@ address {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
-  border-radius: 100%;
+  border-radius: 50%;
   fill: #2e2f42;
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.1);
@@ -562,14 +565,21 @@ address {
   height: 24px;
   line-height: 0;
   border-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   top: 24px;
   right: 24px;
+  padding: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-btn:hover {
+.close-btn:hover,
+.close-btn:focus {
   background-color: #4d5ae5;
   fill: #fff;
+  border: none;
+}
+.icons-close {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-text {
   line-height: 1.5;
@@ -577,16 +587,22 @@ address {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 16px;
+  font-weight: 500;
 }
 .review-form-label {
+  line-height: 1.17;
   display: block;
   font-size: 12px;
-  line-height: 1.16667;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
+}
+.modal-box-for-svg {
+  position: relative;
 }
 .review-form-input {
+  background-color: transparent;
+  outline: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   height: 40px;
@@ -601,23 +617,29 @@ address {
 }
 .review-form-box {
   position: relative;
+  margin-bottom: 16px;
 }
 .review-form-icon {
   position: absolute;
-  top: 26px;
-
+  top: 50%;
+  transform: translateY(-50%);
   left: 16px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .textarea-form {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 360px;
   height: 120px;
-  margin-bottom: 16px;
   resize: none;
-  padding-left: 16px;
-  padding-top: 8px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .textarea-form .modal-box-for-svg {
@@ -634,7 +656,9 @@ address {
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
-
+.review-form-checkbox {
+  margin-bottom: 24px;
+}
 .review-form-own-checkbox {
   display: inline-flex;
   justify-content: center;
@@ -645,13 +669,17 @@ address {
   width: 16px;
   height: 16px;
   fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .review-form-input:focus + .review-form-icon {
   fill: #4d5ae5;
 }
 .review-form-checkbox-label {
+  line-height: 1.17;
   font-size: 12px;
-  line-height: 1.16667;
+
   letter-spacing: 0.04em;
   color: #8e8f99;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -661,8 +689,9 @@ address {
   + .review-form-checkbox-label
   .review-form-own-checkbox {
   border-color: #4d5ae5;
-  background-color: #4d5ae5;
-  fill: #fff;
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
 .review-form-checkbox-input:focus
   + .review-form-checkbox-label
