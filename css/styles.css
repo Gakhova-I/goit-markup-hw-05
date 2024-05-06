@@ -396,6 +396,120 @@ address {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
+/*-----------FOOTER--------------------*/
+.page-footer {
+  padding: 100px 0;
+  background-color: #2e2f42;
+
+  margin: 0 auto;
+}
+.logo-footer-box {
+  margin-right: 120px;
+}
+.footer-logo {
+  margin-bottom: 16px;
+  display: inline-block;
+  line-height: 1.17;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  background-color: #2e2f42;
+}
+.footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  background-color: #2e2f42;
+  max-width: 264px;
+}
+.accent-footer {
+  color: #f4f4fd;
+}
+.box-footer {
+  display: flex;
+  align-items: baseline;
+  margin-right: 120px;
+}
+.footer-media-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.footer-links {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-links:hover,
+.footer-links:focus {
+  background-color: #31d0aa;
+}
+.list-footer {
+  gap: 16px;
+}
+.form-footer-box {
+  margin-left: 80px;
+}
+.form-footer {
+  display: flex;
+  gap: 24px;
+}
+.text-footer-subscribe {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.email-footer {
+  display: flex;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.email-footer::placeholder {
+  color: #ffffff;
+}
+.footer-btn-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: none;
+  width: 165px;
+  height: 40px;
+  color: #fff;
+  fill: #fff;
+  background-color: #4d5ae5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  cursor: pointer;
+  min-width: 165px;
+}
+.footer-btn-icon {
+  margin-left: 16px;
+}
 /*-------------modal overlay----*/
 .modal-overlay {
   opacity: 0;
@@ -569,117 +683,4 @@ address {
   color: #fff;
   display: block;
   margin: auto;
-}
-
-/*-----------FOOTER--------------------*/
-.page-footer {
-  padding: 100px 0;
-  background-color: #2e2f42;
-
-  margin: 0 auto;
-}
-.logo-footer-box {
-  margin-right: 120px;
-}
-.footer-logo {
-  margin-bottom: 16px;
-  display: inline-block;
-  line-height: 1.17;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
-  background-color: #2e2f42;
-}
-.footer-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
-  background-color: #2e2f42;
-  max-width: 264px;
-}
-.accent-footer {
-  color: #f4f4fd;
-}
-.box-footer {
-  display: flex;
-  align-items: baseline;
-  margin-right: 120px;
-}
-.footer-media-text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  margin-bottom: 16px;
-}
-.footer-links {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-links:hover,
-.footer-links:focus {
-  background-color: #31d0aa;
-}
-.list-footer {
-  gap: 16px;
-}
-.form-footer-box {
-  margin-left: 80px;
-}
-.form-footer {
-  display: flex;
-  gap: 24px;
-}
-.text-footer-subscribe {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #fff;
-  margin-bottom: 16px;
-}
-
-.email-footer {
-  display: flex;
-  border: 1px solid #fff;
-  border-radius: 4px;
-  width: 264px;
-  height: 40px;
-  background-color: transparent;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  color: #fff;
-  padding-left: 16px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.email-footer::placeholder {
-  color: #ffffff;
-}
-.footer-btn-message {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  border: none;
-  width: 165px;
-  height: 40px;
-  color: #fff;
-  fill: #fff;
-  background-color: #4d5ae5;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  text-align: center;
-  cursor: pointer;
-}
-.footer-btn-icon {
-  margin-left: 16px;
 }
